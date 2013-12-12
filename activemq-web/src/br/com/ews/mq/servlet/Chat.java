@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServletResponse;
  * <p>
  * Deve enviar o parametro xml, para a URL abaixo:
  * <p>
- * http://localhost:8080/activemq/chat?xml=
+ * http://localhost:8080/activemq-web/chat?xml=
  * 
  * @author Eduardo Wallace
  * @since 11/12/2013
