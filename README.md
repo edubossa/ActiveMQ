@@ -24,14 +24,12 @@ Configurações Servidor Apache Tomcat:
   1- Adicionar a configuração abaixo, no arquivo /conf/context.xml
 
 
-<Resource name="jms/ConnectionFactory" auth="Container" type="org.apache.activemq.ActiveMQConnectionFactory" description="JMS Connection Factory"
-        factory="org.apache.activemq.jndi.JNDIReferenceFactory" brokerURL="tcp://localhost:61616"  brokerName="EWS-BROKKER"/>
+<Resource name="jms/ConnectionFactory" auth="Container" type="org.apache.activemq.ActiveMQConnectionFactory" description="JMS Connection Factory" factory="org.apache.activemq.jndi.JNDIReferenceFactory" brokerURL="tcp://localhost:61616"  brokerName="EWS-BROKKER"/>
         
-<Resource name="jms/transacao" auth="Container" type="org.apache.activemq.command.ActiveMQQueue" description="Fila-Transacao"
-       	 factory="org.apache.activemq.jndi.JNDIReferenceFactory" physicalName="fila.transacao"/>
+<Resource name="jms/transacao" auth="Container" type="org.apache.activemq.command.ActiveMQQueue"      description="Fila-Transacao" factory="org.apache.activemq.jndi.JNDIReferenceFactory" physicalName="fila.transacao"/>
        	 
 <Resource name="jms/chat" auth="Container" type="org.apache.activemq.command.ActiveMQTopic" description="Topic-Chat"
-        factory="org.apache.activemq.jndi.JNDIReferenceFactory" physicalName="topic.chat"/>  
+        factory="org.apache.activemq.jndi.JNDIReferenceFactory" physicalName="topic.chat"/>   
 
 
 ===================================================================  
